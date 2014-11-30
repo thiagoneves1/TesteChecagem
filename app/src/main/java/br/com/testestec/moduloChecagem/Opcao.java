@@ -28,6 +28,7 @@ public class Opcao {
         return idPergunta;
     }
 
+    
     public void setIdPergunta(int idPergunta) {
         this.idPergunta = idPergunta;
     }
