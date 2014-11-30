@@ -2,6 +2,7 @@ package br.com.testestec.moduloChecagem;
 
 
 public class Opcao {
+
     int id;
     int idPergunta;
     String valorTexto;
