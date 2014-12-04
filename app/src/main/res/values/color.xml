@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="ghostwhite" type="color">#f8f8ff</item>
+    <item name="vermelho" type="color">#FF0000</item>
+    <item name="amarelo" type="color">#fffff90d</item>
+    <item name="verde" type="color">#ff3bff24</item>
+</resources>

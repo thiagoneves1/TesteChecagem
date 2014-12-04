@@ -65,7 +65,7 @@ public class MyActivity extends ActionBarActivity {
         boolean inseriu = controle.insereJson(json);//mudar e passar um object JSON ?
 
         if(inseriu) {
-            Log.i(String.valueOf(getApplicationContext()),"json inserido com sucesso");
+            Log.i(String.valueOf(getApplicationContext()), "json inserido com sucesso");
         }
 
             LinearLayout linearLayout = controle.montaLayout();
