@@ -7,5 +7,8 @@
     <string name="title_activity_activity_check">ActivityCheck</string>
     <string name="title_activity_activity_checagem">ActivityChecagem</string>
     <string name="item_ja_verificado">Item Já Verificado</string>
+    <string name="manter_foto">Manter Foto</string>
+    <string name="trocar_foto">Trocar Foto</string>
+    <string name="title_activity_activity_resposta">ActivityResposta</string>
 
 </resources>

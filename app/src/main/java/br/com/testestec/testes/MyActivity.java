@@ -3,58 +3,13 @@ package br.com.testestec.testes;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
 import android.util.Log;
-import android.view.Menu;
-import android.view.MenuItem;
 import android.widget.LinearLayout;
 import br.com.testestec.moduloChecagem.Controle;
 
 
 public class MyActivity extends ActionBarActivity {
 
-
-    String json="{\"checklists\":[{\"App\":\"X\",\"id\":1,\"tituloChecagem\":\"Entrega do Carro do " +
-            "José\",\"categorias\":[{\"nomeCategoria\":\"Manuais e Serviços\",\"itensDaCategoria\"" +
-            ":[{\"id\":1,\"tituloItem\":\"Entrega do Manual do Proprietário\",\"perguntas\"" +
-            ":[{\"id\":1,\"tipo\":\"alternativas-radio\",\"opcoes\":[{\"texto\":\"OK\",\"" +
-            "resposta\":\"1\"},{\"texto\":\"N-OK\",\"resposta\":\"2\"},{\"texto\":\"N-A\",\"" +
-            "resposta\":\"0\"}]},{\"id\":2,\"tipo\":\"texto-livre\"}]},{\"id\":2,\"tituloItem\":\"" +
-            "Entrega da Chave reserva\",\"perguntas\":[{\"id\":3,\"tipo\":\"alternativas-radio\",\"" +
-            "opcoes\":[{\"texto\":\"OK\",\"resposta\":\"1\"},{\"texto\":\"N-OK\",\"resposta\":\"2\"}," +
-            "{\"texto\":\"N-A\",\"resposta\":\"0\"}]},{\"id\":4,\"tipo\":\"texto-livre\"}]}]}," +
-            "{\"nomeCategoria\":\"Documentos\",\"itensDaCategoria\":[{\"id\":3,\"tituloItem\":\"" +
-            "Informação sobre a Autorização Provisória para circulação\",\"perguntas\":" +
-            "[{\"id\":5,\"tipo\":\"alternativas-radio\",\"opcoes\":[{\"texto\":\"OK\",\"" +
-            "resposta\":\"1\"},{\"texto\":\"N-OK\",\"resposta\":\"2\"},{\"texto\":\"N-A\",\"" +
-            "resposta\":\"0\"}]},{\"id\":6,\"tipo\":\"texto-livre\"}]},{\"id\":4,\"tituloItem\":\"" +
-            "Avaliação das condições externas do veículo (lataria)\",\"perguntas\":" +
-            "[{\"id\":7,\"tipo\":\"alternativas-radio\",\"opcoes\":[{\"texto\":\"OK\",\"" +
-            "resposta\":\"1\"},{\"texto\":\"N-OK\",\"resposta\":\"2\"},{\"texto\":\"N-A\",\"" +
-            "resposta\":\"0\"}]},{\"id\":8,\"tipo\":\"texto-livre\",\"opcional\":\"true\"},{\"id\":9,\"" +
-            "tipo\":\"alternativas-lista\",\"opcional\":\"true\",\"opcoes\":[{\"texto\":\"V1+\",\"" +
-            "resposta\":\"1\"},{\"texto\":\"V1\",\"resposta\":\"2\"},{\"texto\":\"V2\",\"" +
-            "resposta\":\"3\"},{\"texto\":\"V3\",\"resposta\":\"4\"}],\"visivel-se\":{\"pergunta\":5,\"" +
-            "resposta\":\"N-A\",\"valor\":\"0\"}},{\"id\":10,\"tipo\":\"foto\",\"" +
-            "opcional\":\"true\"}]}]}]},{\"App\":\"Z\",\"id\":2,\"tituloChecagem\":\"" +
-            "Entrega do Carro do João\",\"categorias\":[{\"nomeCategoria\":\"Manuais e Serviços do João\",\"" +
-            "itensDaCategoria\":[{\"id\":1,\"tituloItem\":\"Entrega do Manual do Proprietário do João\",\"" +
-            "perguntas\":[{\"id\":1,\"tipo\":\"alternativas-radio\",\"opcoes\":[{\"texto\":\"OK\",\"" +
-            "resposta\":\"1\"},{\"texto\":\"N-OK\",\"resposta\":\"2\"},{\"texto\":\"N-A\",\"" +
-            "resposta\":\"0\"}]},{\"id\":2,\"tipo\":\"texto-livre\"}]},{\"id\":2,\"tituloItem\":\"" +
-            "Entrega da Chave reserva do João\",\"perguntas\":[{\"id\":3,\"tipo\":\"alternativas-radio\",\"" +
-            "opcoes\":[{\"texto\":\"OK\",\"resposta\":\"1\"},{\"texto\":\"N-OK\",\"resposta\":\"2\"},{\"" +
-            "texto\":\"N-A\",\"resposta\":\"0\"}]},{\"id\":4,\"tipo\":\"texto-livre\"}]}]},{\"" +
-            "nomeCategoria\":\"Documentos do João\",\"itensDaCategoria\":[{\"id\":3,\"tituloItem\":\"" +
-            "Informação sobre a Autorização Provisória para circulação do João\",\"" +
-            "perguntas\":[{\"id\":5,\"tipo\":\"alternativas-radio\",\"opcoes\":[{\"texto\":\"OK\",\"" +
-            "resposta\":\"1\"},{\"texto\":\"N-OK\",\"resposta\":\"2\"},{\"texto\":\"N-A\",\"" +
-            "resposta\":\"0\"}]},{\"id\":6,\"tipo\":\"texto-livre\"}]},{\"id\":4,\"tituloItem\":\"" +
-            "Avaliação das condições externas do veículo (lataria) do João\",\"perguntas\":[{\"id\":7,\"" +
-            "tipo\":\"alternativas-radio\",\"opcoes\":[{\"texto\":\"OK\",\"resposta\":\"1\"},{\"" +
-            "texto\":\"N-OK\",\"resposta\":\"2\"},{\"texto\":\"N-A\",\"resposta\":\"0\"}]},{\"id\":8,\"tipo\":\"" +
-            "texto-livre\",\"opcional\":\"true\"},{\"id\":9,\"tipo\":\"alternativas-lista\",\"opcional\":\"true\",\"" +
-            "opcoes\":[{\"texto\":\"V1+\",\"resposta\":\"1\"},{\"texto\":\"V1\",\"resposta\":\"2\"},{\"" +
-            "texto\":\"V2\",\"resposta\":\"3\"},{\"texto\":\"V3\",\"resposta\":\"4\"}],\"visivel-se\":{\"" +
-            "pergunta\":5,\"resposta\":\"N-A\",\"valor\":\"0\"}},{\"id\":10,\"tipo\":\"foto\",\"opcional\":\"true\"}]}]}]}]}";
+    String json = "{\"checklists\":[{\"App\":\"X\",\"id\":\"1\",\"nome\":\"Entrega do Carro do José\",\"categorias\":[{\"nome\":\"Manuais e Serviços\",\"itens\":[{\"id\":\"1\",\"texto\":\"Entrega do Manual do Proprietário\",\"respostas\":[{\"id\":\"1\",\"tipo\":\"alternativas-radio\",\"opcoes\":[{\"texto\":\"OK\",\"resposta\":\"1\"},{\"texto\":\"N-OK\",\"resposta\":\"2\"},{\"texto\":\"N-A\",\"resposta\":\"0\"}]},{\"id\":\"2\",\"tipo\":\"foto\"},{\"id\":\"3\",\"tipo\":\"texto-livre\",\"visivel-se\":{\"pergunta\":\"1\",\"resposta\":\"3\",\"valor\":\"V2\"}}]},{\"id\":\"2\",\"texto\":\"Entrega da Chave reserva\",\"respostas\":[{\"id\":\"1\",\"tipo\":\"alternativas-radio\",\"opcoes\":[{\"texto\":\"OK\",\"resposta\":\"1\"},{\"texto\":\"N-OK\",\"resposta\":\"2\"},{\"texto\":\"N-A\",\"resposta\":\"0\"}]},{\"id\":\"2\",\"tipo\":\"texto-livre\"},{\"id\":\"3\",\"tipo\":\"foto\"},{\"id\":\"4\",\"tipo\":\"alternativas-lista\",\"opcoes\":[{\"texto\":\"V1+\",\"resposta\":\"1\"},{\"texto\":\"V1\",\"resposta\":\"2\"},{\"texto\":\"V2\",\"resposta\":\"3\"},{\"texto\":\"V3\",\"resposta\":\"4\"}],\"visivel-se\":{\"pergunta\":\"1\",\"resposta\":\"0\",\"valor\":\"N-A\"}}]}]},{\"nome\":\"Documentos\",\"itens\":[{\"id\":\"3\",\"texto\":\"Informação sobre a Autorização Provisória para circulação\",\"respostas\":[{\"id\":\"1\",\"tipo\":\"alternativas-radio\",\"opcoes\":[{\"texto\":\"OK\",\"resposta\":\"1\"},{\"texto\":\"N-OK\",\"resposta\":\"2\"},{\"texto\":\"N-A\",\"resposta\":\"0\"}]},{\"id\":\"2\",\"tipo\":\"texto-livre\",\"opcional\":\"true\"},{\"id\":\"3\",\"tipo\":\"alternativas-lista\",\"opcoes\":[{\"texto\":\"V1+\",\"resposta\":\"1\"},{\"texto\":\"V1\",\"resposta\":\"2\"},{\"texto\":\"V2\",\"resposta\":\"3\"},{\"texto\":\"V3\",\"resposta\":\"4\"}],\"visivel-se\":{\"pergunta\":\"1\",\"resposta\":\"2\",\"valor\":\"N-OK\"}}]}]}]},{\"App\":\"Y\",\"id\":\"2\",\"nome\":\"Entrega do Carro do João\",\"categorias\":[{\"nome\":\"Manuais e Serviços\",\"itens\":[{\"id\":\"1\",\"texto\":\"Entrega do Manual do Proprietário \",\"respostas\":[{\"id\":\"1\",\"tipo\":\"alternativas-radio\",\"opcoes\":[{\"texto\":\"OK\",\"resposta\":\"1\"},{\"texto\":\"N-OK\",\"resposta\":\"2\"},{\"texto\":\"N-A\",\"resposta\":\"0\"}]},{\"id\":\"2\",\"tipo\":\"texto-livre\"}]},{\"id\":\"2\",\"texto\":\"Entrega da Chave reserva\",\"respostas\":[{\"id\":\"1\",\"tipo\":\"alternativas-radio\",\"opcoes\":[{\"texto\":\"OK\",\"resposta\":\"1\"},{\"texto\":\"N-OK\",\"resposta\":\"2\"},{\"texto\":\"N-A\",\"resposta\":\"0\"}]},{\"id\":\"2\",\"tipo\":\"texto-livre\"},{\"id\":\"3\",\"tipo\":\"foto\"}]}]},{\"nome\":\"Documentos\",\"itens\":[{\"id\":\"3\",\"texto\":\"Informação sobre a Autorização Provisória para circulaçãoY\",\"respostas\":[{\"id\":\"1\",\"tipo\":\"alternativas-radio\",\"opcional\":\"true\",\"opcoes\":[{\"texto\":\"OK\",\"resposta\":\"1\"},{\"texto\":\"N-OK\",\"resposta\":\"2\"},{\"texto\":\"N-A\",\"resposta\":\"0\"}]},{\"id\":\"2\",\"tipo\":\"texto-livre\"},{\"id\":\"3\",\"tipo\":\"alternativas-lista\",\"opcoes\":[{\"texto\":\"V1+\",\"resposta\":\"1\"},{\"texto\":\"V1\",\"resposta\":\"2\"},{\"texto\":\"V2\",\"resposta\":\"3\"},{\"texto\":\"V3\",\"resposta\":\"4\"}],\"visivel-se\":{\"pergunta\":\"1\",\"resposta\":\"2\",\"valor\":\"V1\"}}]}]}]},{\"App\":\"Z\",\"id\":\"3\",\"nome\":\"Entrega do Carro do Luiz\",\"categorias\":[{\"nome\":\"Manuais e Serviços \",\"itens\":[{\"id\":\"1\",\"texto\":\"Entrega do Manual do Proprietário \",\"respostas\":[{\"id\":\"1\",\"tipo\":\"alternativas-radio\",\"opcoes\":[{\"texto\":\"OK\",\"resposta\":\"1\"},{\"texto\":\"N-OK\",\"resposta\":\"2\"},{\"texto\":\"N-A\",\"resposta\":\"0\"}]},{\"id\":\"2\",\"tipo\":\"texto-livre\",\"visivel-se\":{\"pergunta\":\"1\",\"resposta\":\"2\",\"valor\":\"N-OK\"}}]},{\"id\":\"3\",\"texto\":\"Entrega da Chave reserva \",\"respostas\":[{\"id\":\"1\",\"tipo\":\"alternativas-radio\",\"opcoes\":[{\"texto\":\"OK\",\"resposta\":\"1\"},{\"texto\":\"N-OK\",\"resposta\":\"2\"},{\"texto\":\"N-A\",\"resposta\":\"0\"}]},{\"id\":\"4\",\"tipo\":\"texto-livre\"},{\"id\":\"5\",\"tipo\":\"foto\"}]}]},{\"nome\":\"Documentos\",\"itens\":[{\"id\":\"3\",\"texto\":\"Informação sobre a Autorização Provisória para circulação Z\",\"respostas\":[{\"id\":\"1\",\"tipo\":\"alternativas-radio\",\"opcoes\":[{\"texto\":\"OK\",\"resposta\":\"1\"},{\"texto\":\"N-OK\",\"resposta\":\"2\"},{\"texto\":\"N-A\",\"resposta\":\"0\"}]},{\"id\":\"2\",\"tipo\":\"texto-livre\",\"opcional\":\"true\"},{\"id\":\"3\",\"tipo\":\"alternativas-lista\",\"opcoes\":[{\"texto\":\"V1+\",\"resposta\":\"1\"},{\"texto\":\"V1\",\"resposta\":\"2\"},{\"texto\":\"V2\",\"resposta\":\"3\"},{\"texto\":\"V3\",\"resposta\":\"4\"}],\"visivel-se\":{\"pergunta\":\"1\",\"resposta\":\"0\",\"valor\":\"N-A\"}}]}]}]}]}";
 
 
     @Override
@@ -80,24 +35,4 @@ public class MyActivity extends ActionBarActivity {
 //        Log.i("jsonFinal  ", jsonFinal.toString());
     }
 
-
-
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.my, menu);
-        return true;
-    }
-
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
-        int id = item.getItemId();
-        if (id == R.id.action_settings) {
-            return true;
-        }
-        return super.onOptionsItemSelected(item);
-    }
 }
