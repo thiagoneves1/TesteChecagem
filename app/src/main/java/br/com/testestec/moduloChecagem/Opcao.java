@@ -4,13 +4,15 @@ package br.com.testestec.moduloChecagem;
 public class Opcao {
 
     int id;
-    int idPergunta;
+    int idResposta;
     String valorTexto;
-    String valorResposta;
 
     public String getValorResposta() {
         return valorResposta;
     }
+
+    String valorResposta;
+
 
     public void setValorResposta(String valorResposta) {
         this.valorResposta = valorResposta;
@@ -24,13 +26,8 @@ public class Opcao {
         this.valorTexto = valorTexto;
     }
 
-    public int getIdPergunta() {
-        return idPergunta;
-    }
-
-    
-    public void setIdPergunta(int idPergunta) {
-        this.idPergunta = idPergunta;
+    public void setIdResposta(int idResposta) {
+        this.idResposta = idResposta;
     }
 
     public int getId() {

@@ -3,8 +3,8 @@ package br.com.testestec.moduloChecagem;
 
 public class Condicao{
     int id;
-    int idPergunta;
-    int idPerguntaEmCondicional;
+    int idResposta;
+    int idRespostaEmCondicional;
     String valorResposta;
 
     public String getValorResposta() {
@@ -15,20 +15,16 @@ public class Condicao{
         this.valorResposta = valorResposta;
     }
 
-    public int getIdPerguntaEmCondicional() {
-        return idPerguntaEmCondicional;
+    public int getIdRespostaEmCondicional() {
+        return idRespostaEmCondicional;
     }
 
-    public void setIdPerguntaEmCondicional(int idPerguntaEmCondicional) {
-        this.idPerguntaEmCondicional = idPerguntaEmCondicional;
+    public void setIdRespostaEmCondicional(int idRespostaEmCondicional) {
+        this.idRespostaEmCondicional = idRespostaEmCondicional;
     }
 
-    public int getIdPergunta() {
-        return idPergunta;
-    }
-
-    public void setIdPergunta(int idPergunta) {
-        this.idPergunta = idPergunta;
+    public void setIdResposta(int idResposta) {
+        this.idResposta = idResposta;
     }
 
     public int getId() {

@@ -11,6 +11,11 @@ public class ItemChecagem {
     private int status;
     private String app;
 
+
+    public int getStatus() {
+        return status;
+    }
+
     private List<Categoria> listaCategorias = new ArrayList<Categoria>();
 
     public String getApp() {
@@ -37,16 +42,8 @@ public class ItemChecagem {
         this.listaCategorias = listaCategorias;
     }
 
-    public int getIdExterno() {
-        return idExterno;
-    }
-
     public void setIdExterno(int idExterno) {
         this.idExterno = idExterno;
-    }
-
-    public int getStatus() {
-        return status;
     }
 
     public void setStatus(int status) {

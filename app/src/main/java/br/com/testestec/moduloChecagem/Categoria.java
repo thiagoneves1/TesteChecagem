@@ -9,6 +9,7 @@ public class Categoria {
     private int id;
     private String nome;
     private int idItem;
+
     private List<ItemChecagemDaCategoria> listaItemChecagemDaCategoria = new ArrayList<ItemChecagemDaCategoria>();
 
     public int getId() {
@@ -17,10 +18,6 @@ public class Categoria {
 
     public void setId(int id) {
         this.id = id;
-    }
-
-    public int getIdItem() {
-        return idItem;
     }
 
     public void setIdItem(int idItem) {
