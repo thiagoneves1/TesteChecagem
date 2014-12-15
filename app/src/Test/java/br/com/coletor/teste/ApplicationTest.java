@@ -1,4 +1,4 @@
-package br.com.testestec.testes;
+package br.com.coletor.teste;
 
 import android.app.Application;
 import android.test.ApplicationTestCase;

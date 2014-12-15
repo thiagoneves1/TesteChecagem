@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="br.com.testestec.testes" >
+    package="br.com.coletor.teste" >
 
     <uses-feature
         android:name="android.hardware.camera"
@@ -16,7 +16,7 @@
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
         <activity
-            android:name=".MyActivity"
+            android:name="br.com.coletor.app.ListaItens"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -25,12 +25,12 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="br.com.testestec.moduloChecagem.ActivityChecagem"
+            android:name="br.com.coletor.ColetorMovel.Coletor"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:label="@string/title_activity_activity_checagem" >
         </activity>
         <activity
-            android:name=".ActivityResposta"
+            android:name="br.com.coletor.app.JsonResposta"
             android:label="@string/title_activity_activity_resposta" >
         </activity>
     </application>

@@ -1,14 +1,15 @@
-package br.com.testestec.testes;
+package br.com.coletor.app;
 
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
 import android.widget.EditText;
-import br.com.testestec.moduloChecagem.Constantes;
-import br.com.testestec.moduloChecagem.Controle;
-import br.com.testestec.moduloChecagem.DataBaseHelper;
+import br.com.coletor.ColetorMovel.Constantes;
+import br.com.coletor.ColetorMovel.Controle;
+import br.com.coletor.ColetorMovel.DataBaseHelper;
+import br.com.coletor.teste.R;
 import org.json.JSONObject;
 
-public class ActivityResposta extends ActionBarActivity {
+public class JsonResposta extends ActionBarActivity {
     private Bundle extras;
     EditText editTextResposta;
 

@@ -6,5 +6,6 @@
     <item name="verde" type="color">#ff3bff24</item>
     <item name="azul_claro" type="color">#BCDFED</item>
     <item name="preto" type="color">#ff000000</item>
-    <item name="ciano" type="color">#ff39e2ed</item>
+    <item name="ciano" type="color">#03A9F4</item>
+    <item name="azul_escuro" type="color">#0288D1</item>
 </resources>
