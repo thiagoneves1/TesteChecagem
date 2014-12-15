@@ -42,32 +42,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0d0aa3f5-cf1c-4527-96bb-bc8c20033888" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/src/androidTest/java/br/com/testestec/testes/ApplicationTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/src/main/java/br/com/testestec/moduloChecagem/ActivityChecagem.java" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/app/src/main/java/br/com/testestec/moduloChecagem/BancoDeDadosChecagem.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/src/main/java/br/com/testestec/moduloChecagem/Categoria.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/src/main/java/br/com/testestec/moduloChecagem/Condicao.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/src/main/java/br/com/testestec/moduloChecagem/Constantes.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/src/main/java/br/com/testestec/moduloChecagem/Controle.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/src/main/java/br/com/testestec/moduloChecagem/DataBaseHelper.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/src/main/java/br/com/testestec/moduloChecagem/ItemChecagem.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/src/main/java/br/com/testestec/moduloChecagem/ItemChecagemDaCategoria.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/src/main/java/br/com/testestec/moduloChecagem/Opcao.java" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/app/src/main/java/br/com/testestec/moduloChecagem/Pergunta.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/src/main/java/br/com/testestec/moduloChecagem/Resposta.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/src/main/java/br/com/testestec/testes/ActivityResposta.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/src/main/java/br/com/testestec/testes/MyActivity.java" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Testes.iml" afterPath="$PROJECT_DIR$/Checklist.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/model_data.bin" afterPath="$PROJECT_DIR$/build/intermediates/model_data.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_activity_checagem.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_activity_checagem.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/menu/activity_checagem.xml" afterPath="$PROJECT_DIR$/app/src/main/res/menu/activity_checagem.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/menu/activity_check.xml" afterPath="$PROJECT_DIR$/app/src/main/res/menu/activity_check.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/menu/activity_resposta.xml" afterPath="$PROJECT_DIR$/app/src/main/res/menu/activity_resposta.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/app.iml" afterPath="$PROJECT_DIR$/app/app.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/values/color.xml" afterPath="$PROJECT_DIR$/app/src/main/res/values/color.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/br/com/coletor/ColetorMovel" afterPath="$PROJECT_DIR$/app/src/main/java/br/com/coletor/ColetorMovel" />
     </list>
     <ignored path="Testes.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -1534,7 +1511,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="53" y="40" width="1184" height="691" extended-state="1" />
+    <frame x="53" y="40" width="1184" height="691" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
