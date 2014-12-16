@@ -10,5 +10,7 @@
     <string name="manter_foto">Manter Foto</string>
     <string name="trocar_foto">Trocar Foto</string>
     <string name="title_activity_activity_resposta">ActivityResposta</string>
+    <string name="title_activity_sincronizar">Sincronizar</string>
+    <string name="sincronizar">Sincronizar</string>
 
 </resources>
